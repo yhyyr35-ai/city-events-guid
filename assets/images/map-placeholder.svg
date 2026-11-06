@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350" width="800" height="350" dir="rtl">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#dde3ea" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="350" fill="#eef2f6"/>
+  <rect width="800" height="350" fill="url(#grid)"/>
+
+  <rect x="60" y="40" width="160" height="100" rx="12" fill="#d1e7dd" opacity="0.8"/>
+  <rect x="560" y="200" width="180" height="110" rx="12" fill="#d1e7dd" opacity="0.8"/>
+
+  <path d="M 0 260 Q 250 220 450 280 T 800 240 L 800 300 Q 500 340 250 270 T 0 310 Z" fill="#cfe2ff"/>
+
+  <path d="M 0 175 L 800 175" stroke="#ffffff" stroke-width="18"/>
+  <path d="M 0 175 L 800 175" stroke="#adb5bd" stroke-width="2" stroke-dasharray="10,10"/>
+  <path d="M 400 0 L 400 350" stroke="#ffffff" stroke-width="16"/>
+  <path d="M 180 0 L 280 350" stroke="#ffffff" stroke-width="10"/>
+  <path d="M 620 0 L 520 350" stroke="#ffffff" stroke-width="10"/>
+
+  <circle cx="400" cy="175" r="32" fill="#0d6efd" opacity="0.18"/>
+  <circle cx="400" cy="175" r="18" fill="#0d6efd" opacity="0.35"/>
+
+  <path d="M400 115 C380 115 365 130 365 150 C365 176 400 205 400 205 C400 205 435 176 435 150 C435 130 420 115 400 115 Z" fill="#dc3545" stroke="#ffffff" stroke-width="3"/>
+  <circle cx="400" cy="148" r="10" fill="#ffffff"/>
+
+  <rect x="240" y="45" width="320" height="54" rx="8" fill="#212529" opacity="0.92"/>
+  <text x="400" y="69" font-family="'Segoe UI', Tahoma, sans-serif" font-size="15" font-weight="bold" fill="#ffffff" text-anchor="middle">موقع إقامة الفعالية - الجامعة الافتراضية السورية (SVU)</text>
+  <text x="400" y="89" font-family="'Segoe UI', Tahoma, sans-serif" font-size="12" fill="#ced4da" text-anchor="middle">خريطة توضيحية (المقر الرئيسي / القاعات الافتراضية)</text>
+</svg>

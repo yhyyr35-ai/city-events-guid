@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ورشة عمل برمجة الويب 1 - دليل فعاليات الجامعة الافتراضية السورية</title>
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark main-navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <span class="brand-icon">✦</span>
+                دليل الفعاليات
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu"
+                aria-controls="mainMenu" aria-expanded="false" aria-label="فتح القائمة">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainMenu">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">الفعاليات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">عن الدليل</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">اتصل بنا</a>
+                    </li>
+                </ul>
+
+                <a href="events.html" class="btn nav-button">
+                    تصفح جميع الفعاليات 📅
+                </a>
+            </div>
+        </div>
+    </nav>
+
+
+    <header class="page-header-banner">
+        <div class="container">
+            <span class="page-header-badge">✦ تفاصيل ومعلومات الفعالية</span>
+            <h1 class="page-header-title">ورشة عمل برمجة الويب 1</h1>
+            <p class="page-header-desc">
+                اطلع على الموعد، المكان، الوصف الكامل للفعالية، مع إمكانية إضافة الحدث إلى تقويمك الشخصي ومشاركته مع زملائك.
+            </p>
+        </div>
+    </header>
+
+    <main class="container my-5" id="eventPageContainer" data-event-id="1" data-ics-date="2026-11-15">
+
+    
+        <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb custom-breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+                    <li class="breadcrumb-item"><a href="events.html">دليل الفعاليات</a></li>
+                    <li class="breadcrumb-item active" id="breadcrumbCurrent" aria-current="page">ورشة عمل برمجة الويب 1</li>
+                </ol>
+            </nav>
+
+            <a href="events.html" class="btn btn-outline-custom btn-sm">
+                &rarr; العودة إلى دليل الفعاليات
+            </a>
+        </div>
+
+ 
+        <article class="event-detail-card">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6">
+                    <img id="eventMainImage" src="assets/images/image1.jpg" alt="ورشة عمل برمجة الويب" class="event-main-image">
+                </div>
+
+                <div class="col-lg-6 d-flex flex-column">
+                    <div>
+                        <span id="eventCategoryBadge" class="badge-event-category badge-event-workshop mb-2 fs-6">ورشة عمل</span>
+                        <h2 id="eventTitle" class="event-detail-title">ورشة عمل برمجة الويب 1</h2>
+                    </div>
+
+                    <ul class="event-meta-list">
+                        <li>
+                            <span>📅 <strong>التاريخ:</strong></span>
+                            <span id="eventDate" class="text-navy fw-bold">2021-9-15</span>
+                            <span class="text-muted small">(تاريخ الفلترة المسجل: 2026-11-15)</span>
+                        </li>
+                        <li>
+                            <span>📍 <strong>المكان:</strong></span>
+                            <span id="eventLocation" class="text-navy">أونلاين (عبر منصة الجامعة الافتراضية)</span>
+                        </li>
+                        <li>
+                            <span>🏷️ <strong>التصنيف:</strong></span>
+                            <span id="eventCategoryName" class="text-navy">ورشة عمل (ورشة)</span>
+                        </li>
+                    </ul>
+
+                    <div class="event-description-box">
+                        <h3>وصف الفعالية:</h3>
+                        <p id="eventDescription">
+                            تعلّم تقنيات وتطبيقات الويب الحديثة بأسلوب عملي تفاعلي. تغطي هذه الورشة أساسيات بناء صفحات الويب المتوافقة باستخدام HTML5 و CSS3 و JavaScript، بالإضافة إلى أفضل الممارسات في التصميم المتجاوب وتجربة المستخدم.
+                        </p>
+                    </div>
+
+                    <div class="action-buttons-group">
+                        <button type="button" id="addToCalendarBtn" class="btn btn-primary-custom">
+                            📅 أضف إلى التقويم (ICS)
+                        </button>
+
+                        <button type="button" id="shareEventBtn" class="btn btn-outline-custom">
+                            🔗 مشاركة الفعالية
+                        </button>
+
+                        <button type="button" id="copyUrlBtn" class="btn btn-outline-custom">
+                            📋 نسخ الرابط
+                        </button>
+
+                        <a href="events.html" class="btn btn-outline-custom ms-auto">
+                            جميع الفعاليات
+                        </a>
+                    </div>
+
+                   
+                    <div id="actionFeedback" aria-live="polite"></div>
+                </div>
+            </div>
+        </article>
+
+        
+        <section class="related-events-card">
+            <h3>✦ تصفح الفعاليات الأخرى في الدليل</h3>
+            <div class="row g-4" id="relatedEventsGrid">
+                
+              
+                <div class="col-md-6">
+                    <div class="event-item-card h-100">
+                        <img src="assets/images/image2.jpg" class="event-card-img" alt="معرض مشاريع الفصل الدراسي">
+                        <div class="event-card-body">
+                            <span class="badge-event-category badge-event-exhibition">معرض</span>
+                            <h4 class="event-card-title">معرض مشاريع الفصل الدراسي</h4>
+                            <p class="event-card-desc">عرض متميز ومبتكر لأبرز مشاريع الطلاب في الجامعة الافتراضية.</p>
+                            <ul class="event-card-meta">
+                                <li>📅 <strong>التاريخ:</strong> 2020-1-01 (2026-12-01)</li>
+                                <li>📍 <strong>المكان:</strong> المقر الرئيسي</li>
+                            </ul>
+                            <a href="event-2.html" class="btn btn-outline-custom mt-auto">عرض التفاصيل ←</a>
+                        </div>
+                    </div>
+                </div>
+
+       
+                <div class="col-md-6">
+                    <div class="event-item-card h-100">
+                        <img src="assets/images/image3.jpg" class="event-card-img" alt="ندوة الذكاء الاصطناعي">
+                        <div class="event-card-body">
+                            <span class="badge-event-category badge-event-seminar">ندوة أكاديمية</span>
+                            <h4 class="event-card-title">ندوة الذكاء الاصطناعي والأمن السيبراني</h4>
+                            <p class="event-card-desc">مناقشة أحدث التطورات والتحديات في مجال الذكاء الاصطناعي والأمن الرقمي.</p>
+                            <ul class="event-card-meta">
+                                <li>📅 <strong>التاريخ:</strong> 2022-3-10 (2026-12-10)</li>
+                                <li>📍 <strong>المكان:</strong> أونلاين</li>
+                            </ul>
+                            <a href="event-3.html" class="btn btn-outline-custom mt-auto">عرض التفاصيل ←</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-5 col-md-6">
+                    <a href="index.html" class="footer-brand">
+                        <span class="brand-icon">✦</span> دليل الفعاليات
+                    </a>
+                    <p class="footer-description">
+                        المنصة الموحدة لاكتشاف وتوثيق الأنشطة والفعاليات التعليمية والثقافية والندوات الأكاديمية لطلاب وأساتذة الجامعة الافتراضية السورية (SVU).
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-md-3">
+                    <h3>روابط سريعة</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="events.html">دليل الفعاليات</a></li>
+                        <li><a href="about.html">عن الدليل</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-3">
+                    <h3>تواصل معنا</h3>
+                    <p class="text-light small mb-3">
+                        يسعدنا تلقي مقترحاتكم واستفساراتكم حول الأنشطة الجامعية وورش العمل.
+                    </p>
+                    <a href="contact.html" class="btn btn-outline-custom btn-sm">
+                        الانتقال إلى صفحة التواصل ←
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 دليل فعاليات الجامعة الافتراضية السورية (SVU) - جميع الحقوق محفوظة</p>
+                <p>مشروع مقرر برمجة الويب ✦ صُنع بشغف من أجل المعرفة والتعاون الطلابي</p>
+            </div>
+        </div>
+    </footer>
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  
+    <script src="assets/js/event.js"></script>
+</body>
+
+</html>
+

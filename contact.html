@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصل معنا - دليل فعاليات الجامعة الافتراضية السورية</title>
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+    
+    <nav class="navbar navbar-expand-lg navbar-dark main-navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <span class="brand-icon">✦</span>
+                دليل الفعاليات
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu"
+                aria-controls="mainMenu" aria-expanded="false" aria-label="فتح القائمة">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainMenu">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">الفعاليات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">عن الدليل</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">اتصل بنا</a>
+                    </li>
+                </ul>
+
+                <a href="events.html" class="btn nav-button">
+                    تصفح الفعاليات 📅
+                </a>
+            </div>
+        </div>
+    </nav>
+
+   
+    <header class="page-header-banner">
+        <div class="container">
+            <span class="page-header-badge">✦ قنوات التواصل والاستفسارات</span>
+            <h1 class="page-header-title">تواصل معنا واستفسر عن الفعاليات</h1>
+            <p class="page-header-desc">
+                يسعدنا استقبال استفساراتكم واقتراحاتكم حول الفعاليات، ورشات العمل، والندوات الأكاديمية في الجامعة الافتراضية السورية (SVU).
+            </p>
+        </div>
+    </header>
+
+    <main class="container my-5">
+
+        
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb custom-breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+                <li class="breadcrumb-item active" aria-current="page">تواصل معنا</li>
+            </ol>
+        </nav>
+
+      
+        <div class="demo-notice-alert" role="note">
+            <strong>ملاحظة توضيحية (عرض تجريبي للواجهة الأمامية - Frontend Demonstration):</strong>
+            يعمل هذا النموذج التفاعلي في الواجهة الأمامية للتحقق من صحة المدخلات والتنسيق البرمجي بدون خادم خلفي (Backend) أو خدمة إرسال بريد حقيقية. لن يتم إرسال أي رسائل فعلية عند الضغط على زر الإرسال، وسيتم تأكيد سلامة البيانات محلياً.
+        </div>
+
+        <div class="row g-4">
+            
+          
+            <div class="col-lg-7">
+                <section class="contact-form-card">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <span class="brand-icon fs-4">✉️</span>
+                        <h2 class="h5 fw-bold m-0 text-navy">نموذج المراسلة المباشرة</h2>
+                    </div>
+
+                    
+                    <div id="contactAlertContainer" aria-live="polite" class="mb-3"></div>
+
+                    <form id="contactForm" novalidate>
+                       
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label fw-bold">الاسم الكامل <span class="text-danger">*</span></label>
+                            <input
+                                type="text"
+                                id="fullName"
+                                name="fullName"
+                                class="form-control custom-input"
+                                placeholder="أدخل اسمك الكامل..."
+                                required
+                            >
+                            <div id="fullNameError" class="invalid-feedback">
+                                حقل الاسم الكامل مطلوب.
+                            </div>
+                        </div>
+
+                      
+                        <div class="mb-3">
+                            <label for="emailAddress" class="form-label fw-bold">البريد الإلكتروني <span class="text-danger">*</span></label>
+                            <input
+                                type="email"
+                                id="emailAddress"
+                                name="emailAddress"
+                                class="form-control custom-input"
+                                placeholder="example@svuonline.org"
+                                required
+                            >
+                            <div id="emailAddressError" class="invalid-feedback">
+                                يرجى إدخال عنوان بريد إلكتروني صالح.
+                            </div>
+                        </div>
+
+                      
+                        <div class="mb-3">
+                            <label for="messageText" class="form-label fw-bold">الرسالة أو الاستفسار <span class="text-danger">*</span></label>
+                            <textarea
+                                id="messageText"
+                                name="messageText"
+                                class="form-control custom-input"
+                                rows="5"
+                                placeholder="اكتب استفسارك أو ملاحظتك حول الفعاليات والأنشطة الأكاديمية هنا..."
+                                required
+                            ></textarea>
+                            <div id="messageTextError" class="invalid-feedback">
+                                حقل الرسالة مطلوب.
+                            </div>
+                        </div>
+
+                        <div class="d-grid d-sm-flex justify-content-sm-start">
+                            <button type="submit" id="submitContactBtn" class="btn btn-primary-custom px-4 py-2">
+                                إرسال الرسالة (تجريبي) ✨
+                            </button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+
+         
+            <div class="col-lg-5">
+                <aside class="contact-info-card">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h2 class="h5 fw-bold m-0 text-navy">معلومات التواصل البديلة</h2>
+                        <span class="placeholder-badge">بيانات تجريبية</span>
+                    </div>
+
+                    <p class="text-muted small mb-2">
+                        بيانات الاتصال الواردة أدناه هي عناصر نائبة تجريبية قابلة للتعديل مخصصة لأغراض العرض الأكاديمي لمقرر برمجة الويب:
+                    </p>
+
+                    <img src="assets/images/contact-illustration.svg" alt="صورة توضيحية للتواصل" class="contact-banner-img">
+
+                    <ul class="contact-info-list">
+                        <li>
+                            <strong>📧 البريد الإلكتروني (عنصر نائب):</strong>
+                            <code>events-svu@example.org</code>
+                        </li>
+                        <li>
+                            <strong>📞 هاتف الاستعلامات (عنصر نائب):</strong>
+                            <code>+963-11-0000000</code>
+                        </li>
+                        <li>
+                            <strong>📍 المقر والموقع (عنصر نائب):</strong>
+                            <div class="text-secondary small mt-1">
+                                مبنى الإدارة المركزية - الجامعة الافتراضية السورية، دمشق.
+                            </div>
+                        </li>
+                        <li>
+                            <strong>🕒 أوقات الدوام الرسمي (بيانات تجريبية):</strong>
+                            <div class="text-secondary small mt-1">
+                                الأحد إلى الخميس: 09:00 صباحاً حتى 03:00 بعد الظهر.
+                            </div>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+
+        </div>
+    </main>
+
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-5 col-md-6">
+                    <a href="index.html" class="footer-brand">
+                        <span class="brand-icon">✦</span> دليل الفعاليات
+                    </a>
+                    <p class="footer-description">
+                        المنصة الموحدة لاكتشاف وتوثيق الأنشطة والفعاليات التعليمية والثقافية والندوات الأكاديمية لطلاب وأساتذة الجامعة الافتراضية السورية (SVU).
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-md-3">
+                    <h3>روابط سريعة</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="events.html">دليل الفعاليات</a></li>
+                        <li><a href="about.html">عن الدليل</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-3">
+                    <h3>تواصل معنا</h3>
+                    <p class="text-light small mb-3">
+                        يسعدنا تلقي مقترحاتكم واستفساراتكم حول الأنشطة الجامعية وورش العمل.
+                    </p>
+                    <a href="contact.html" class="btn btn-outline-custom btn-sm">
+                        الانتقال إلى صفحة التواصل ←
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 دليل فعاليات الجامعة الافتراضية السورية (SVU) - جميع الحقوق محفوظة</p>
+                <p>مشروع مقرر برمجة الويب ✦ صُنع بشغف من أجل المعرفة والتعاون الطلابي</p>
+            </div>
+        </div>
+    </footer>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+ 
+    <script src="assets/js/contact.js"></script>
+</body>
+
+</html>
+
